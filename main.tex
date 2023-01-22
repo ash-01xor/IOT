@@ -1,0 +1,99 @@
+\documentclass{article}
+
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+\usepackage[english]{babel}
+
+% Set page size and margins
+% Replace `letterpaper' with`a4paper' for UK/EU standard size
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Edge Computing for Advanced Robotics Systems}
+
+\begin{document}
+\maketitle
+
+
+Link to the original paper: \href{https://arxiv.org/pdf/2209.08333.pdf}{https://arxiv.org/pdf/2209.08333.pdf}
+
+
+\section{Topic Summary}
+
+This paper discusses how edge computing technology can improve robotic systems by providing instant data processing. It also mentions how researchers in areas such as machine and deep learning use edge and cloud computing for their applications.
+It gives a broad idea about the advantages and the disadvantages of various edge computing architectures which needs to be looked upon before implementation
+
+
+\section{Key Contributions}
+\begin{itemize}
+\item Explanation of the four layers of computing architecture from a robotics point of view
+    \begin{itemize}
+    \item The four layers are
+        \begin{itemize}
+        \item Devices layer
+            \begin{itemize}
+            \item multiple robotic systems handle tasks such as data generation, light data processing, low-level control, and other processes that need to be done locally.
+            \end{itemize}
+        \item Edge layer
+            \begin{itemize}
+            \item offloads tasks to remote entities
+            \item It handles large volume real-time data processing, on-premises data visualization, high-level control, and micro data storage.
+            \end{itemize}
+        \item Fog layer
+            \begin{itemize}
+            \item an extension of the edge layer
+            \item It handles tasks such as local networking and control response.
+            \end{itemize}
+        \item Cloud layer
+            \begin{itemize}
+            \item It handles tasks such as big data processing and data storage.
+            \end{itemize}
+        \end{itemize}
+        \end{itemize}
+\end{itemize}
+ The main difference between a container and VM is that a VM emulates an entire machine down to the hardware layers, while containers only emulate the software components. The paper gives  a comparison among various cloud providers from Amazon's AWS to Microsoft's azure to Google's GCP
+ The final section of the paper provides an idea of edge applications
+
+\section{My Views}
+Since the advent of new technology such as 5G and incremental usage of devices, there has been a severe time delay with regard to services. Offloading tasks to cloud servers has only led to identifying more problems such as low latency and low energy consumption.
+\begin{itemize}
+\item This is where edge computing comes in, it helps in reducing task delay and effectively dealing with requests from the devices
+\end{itemize}
+\begin{itemize}
+\item The papers provide a brief analysis of virtual machines, containers, and Kubernetes.
+\end{itemize}
+\begin{itemize}
+\item It gives an insight into the kinds of services provided by the top cloud providers and the advantages one has over another
+\end{itemize}
+
+\section{Agreements}
+When compared to other local edge providers, the cloud providers mentioned here have better resources and infrastructure
+\begin{itemize}
+\item Microsoft Azure has fewer compute services and location servers compared to AWS, but it offers a smooth hybrid-cloud environment, security, and scalability, but few options for low-size VMs
+\end{itemize}
+\begin{itemize}
+    \item Google Cloud offers fewer location and service options compared to AWS, but it has a handful of options for cloud solutions, GCE provides many CPU and CPU options, high-performance VMs, and container support
+\end{itemize}
+\begin{itemize}
+    \item Latency and safety concerns are important issues that should be addressed when developing robotic systems
+\end{itemize}
+\begin{itemize}
+    \item The combination of edge computing and 5G networks can help address these challenges.
+\end{itemize}
+
+\section{Pitfalls}
+\begin{itemize}
+\item Since the research has taken place in Europe and the researchers are interested in low latency, they haven't taken solutions that might be available in Europe.
+\end{itemize}
+\begin{itemize}
+    \item The lack of articles and research papers in this field is a genuine pitfall
+\end{itemize}
+\begin{itemize}
+    \item Explanation of how edge computing has been used for robotics could have been more, the paper spends a lot of time in explanation of the services and the concepts which accompany edge computing. However, for a paper based on the improvement of robotics applications using edge computing, there is a dearth of applications that have been mentioned and their usage detailedly.
+\end{itemize}
+
+\end{document}
